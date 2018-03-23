@@ -1,6 +1,12 @@
 function bbsort(array,objectProp,method){
 
-    method===undefined?method=objectProp:method;
+    
+    if(!method&&objectProp===-1){
+    
+       method=objectProp;
+       objectProp=undefined;
+    }
+    
 
     //check param is array
     var isArray = Array.isArray(array)
@@ -27,26 +33,26 @@ function bbsort(array,objectProp,method){
                         }
 
                 }
-                }else if(method==='-1'){
-
-                    if(method===undefined){
-                        
-                                for(var i=0;i<array.length;i++){
-                        
-                                        for(var j=0;j<array.length;j++){
-                        
-                                            if(array[j+1]>array[j]){
-                        
-                                                var temp = array[j];
-                                                array[j] = array[j+1];
-                                                array[j+1] = temp;
-                        
-                                            }
-                        
-                                        }
-                        
-                                }
+            }else if(method===-1){
+                console.log('fgrfg')
+               
+                    
+                for(var i=0;i<array.length;i++){
+        
+                        for(var j=0;j<array.length-1;j++){
+        
+                            if(array[j+1]>array[j]){
+        
+                                var temp = array[j];
+                                array[j] = array[j+1];
+                                array[j+1] = temp;
+        
+                            }
+        
                         }
+        
+                }
+                    
                 }
         //3 params
         }else{
@@ -57,7 +63,7 @@ function bbsort(array,objectProp,method){
                      for(var j=0;j<array.length-1;j++){
                        
                           
-                         if(array[j][objectProp]>array[j+1]['a']){
+                         if(array[j][objectProp]>array[j+1][objectProp]){
                           
                              var temp = array[j];
                              array[j] = array[j+1];
@@ -74,7 +80,7 @@ function bbsort(array,objectProp,method){
                      for(var j=0;j<array.length-1;j++){
                        
                           
-                         if(array[j+1][objectProp]>array[j]['a']){
+                         if(array[j+1][objectProp]>array[j][objectProp]){
                           
                              var temp = array[j];
                              array[j] = array[j+1];
