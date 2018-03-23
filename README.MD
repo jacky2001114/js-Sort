@@ -1,8 +1,11 @@
 # js-bubbleSort
 javascript bubble sort 
 # usage
-bbsort([array],method)
+
 ```javascript
+
+    bbsort([array],method)
+
     bbsort([1,546,789,2,4])
     //return [1, 2, 4, 546, 789]
 
@@ -11,8 +14,11 @@ bbsort([array],method)
 ```
 bubble sorted by Object Property
 
-bbsort([array object],object Property,method)
+
 ```javascript
+
+    bbsort([array object],object Property,method)
+
     bbsort([{{name:'banana',price:100},
             {name: "apple", price: 50}},
             {name:'iphoneX',price:10000}]
