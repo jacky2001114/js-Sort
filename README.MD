@@ -19,8 +19,8 @@ bubble sorted by Object Property
 
     bbsort([array object],object Property,method)
 
-    bbsort([{{name:'banana',price:100},
-            {name: "apple", price: 50}},
+    bbsort([{name:'banana',price:100},
+            {name: "apple", price: 50},
             {name:'iphoneX',price:10000}]
             ,'price')
 
@@ -30,8 +30,8 @@ bubble sorted by Object Property
      {name: "iphoneX", price: 10000}]
      */
 
-    bbsort([{name:'banana',price:100},
-            {name: "apple", price: 50}},
+    bbsort([name:'banana',price:100},
+            {name: "apple", price: 50},
             {name:'iphoneX',price:10000}]
             ,'price',-1)
 
