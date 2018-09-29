@@ -1,6 +1,9 @@
-# js-bubbleSort
-javascript bubble sort 
-# usage
+# Javscript different sort way
+1.  bubbleSort
+2.  shffleSort
+
+#   BubbleSort
+## Usage
 
 ```javascript
 
@@ -41,5 +44,15 @@ bubble sorted by Object Property
     {name: "apple", price: 50}]
     /*
 ```
+# ShuffleSort
+##  Usage
+```javascript
+    shufflesort([10000, 50, 100])
+    /* return
+    [50, 10000, 100]
+    */
+   // won't return the param array 
+```
+
 
 
