@@ -16,9 +16,9 @@ function bbsort(array, objectProp, method) {
         if (objectProp === undefined) {
             if (method === undefined) {
 
-                for (var i = 0; i < array.length; i++) {
+                for (var i = 0; i < array.length - 1; i++) {
 
-                    for (var j = 0; j < array.length; j++) {
+                    for (var j = 0; j < array.length - 1 - i; j++) {
 
                         if (array[j] > array[j + 1]) {
 
@@ -33,9 +33,9 @@ function bbsort(array, objectProp, method) {
                 }
             } else if (method === -1) {
 
-                for (var i = 0; i < array.length; i++) {
+                for (var i = 0; i < array.length - 1; i++) {
 
-                    for (var j = 0; j < array.length - 1; j++) {
+                    for (var j = 0; j < array.length - 1 - i; j++) {
 
                         if (array[j + 1] > array[j]) {
 
@@ -54,9 +54,9 @@ function bbsort(array, objectProp, method) {
         } else {
 
             if (method === undefined) {
-                for (var i = 0; i < array.length; i++) {
+                for (var i = 0; i < array.length - 1; i++) {
 
-                    for (var j = 0; j < array.length - 1; j++) {
+                    for (var j = 0; j < array.length - 1 - i; j++) {
 
                         if (array[j][objectProp] > array[j + 1][objectProp]) {
 
@@ -70,9 +70,9 @@ function bbsort(array, objectProp, method) {
 
                 }
             } else if (method === -1) {
-                for (var i = 0; i < array.length; i++) {
+                for (var i = 0; i < array.length - 1; i++) {
 
-                    for (var j = 0; j < array.length - 1; j++) {
+                    for (var j = 0; j < array.length - 1 - i; j++) {
 
                         if (array[j + 1][objectProp] > array[j][objectProp]) {
 
